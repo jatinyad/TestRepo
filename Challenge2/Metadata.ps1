@@ -49,4 +49,5 @@ function Get-Metadata {
 $Metadata = Get-Metadata -InstanceEndpoint $InstanceEndpoint -ApiVersion $ApiVersion
 
 #Print Output
-$Metadata
+$Metadata = ($Metadata | ConvertFrom-Json).compute
+$Metadata 
