@@ -38,7 +38,7 @@ function Get-Value {
         $Obj = $object
 
         #Fetching values for each of the key 
-        foreach($Key in $Keys){
+        foreach ($Key in $Keys) {
             $Obj = $Obj.$Key
         }
 

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "prefix": {
+            "value": "Test"
+        },
+        "environment": {
+            "value": "UAT"
+        },
+        "locationShortName": {
+            "value": "ci"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "userAdmin": {
+            "value": "userAdmin"
+        },
+        "vnetAddressPrefix": {
+            "value": "10.0.0.0/16"
+        },
+        "subnetAddressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "vmSize": {
+            "value": "Standard_B1s"
+        },
+        "imageReference": {
+            "value": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2016-Datacenter",
+                "version": "latest"
+            }
+        }
+    }
+}
